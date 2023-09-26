@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.d-none {
+  display: none !important;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+header .navbar {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+header .navbar .burgerMenu {
+  width: 25px;
+  height: 25px;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+header .navbar .burgerMenu span {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  display: block;
+  transition: all 0.3s;
+  border-radius: 1px;
+}
+header .navbar .burgerMenu span:nth-child(2) {
+  margin-left: 3px;
+}
+header .navbar .burgerMenu:hover span {
+  transition: all 0.3s ease-in-out;
+}
+header .navbar .burgerMenu:hover span:nth-child(1) {
+  margin-left: 3px;
+}
+header .navbar .burgerMenu:hover span:nth-child(2) {
+  margin-left: 0px;
+}
+header .navbar .burgerMenu:hover span:nth-child(3) {
+  margin-left: 3px;
+}
+header .navbar .logo {
+  width: calc(60% - 25px);
+  text-align: center;
+}
+header .navbar .logo a {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 2px;
+}
+header .navbar .lastNav {
+  width: 25%;
+  display: flex;
+  justify-content: right;
+}
+header .navbar .lastNav i {
+  font-size: 1.2rem;
+  text-align: center;
+}
+header .navbar .lastNav i:last-child {
+  margin-left: 1rem;
+}
+header .search {
+  width: 100%;
+  height: 5vh;
+  border: 1px solid rgb(71, 71, 71);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+header .search p {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+}
+header .navLink {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid #787878;
+}
+header .navLink a {
+  position: relative;
+  margin: 0 1rem;
+  padding: 1rem 0;
+  color: rgb(49, 49, 49);
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+header .navLink span {
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+}
+header .navLink a:hover span {
+  width: 100%;
+  transition: width 0.5s;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+}
+header .navLink .activNavLink span {
+  width: 100%;
+}
+header .sousMenu {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  background-color: rgb(245, 245, 245);
+  border-bottom: 1px solid #787878;
+}
+header .sousMenu .imgSousMenu {
+  width: 100%;
+  height: 15vh;
+  border-radius: 20px;
+}
+header .sousMenu .sousMenuSexe ul {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+}
+header .sousMenu .sousMenuSexe ul li {
+  padding: 1rem 0;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+header .sousMenu .sousMenuSexe ul li a {
+  font-size: 0.9rem;
+  color: black;
+  letter-spacing: 2px;
+  font-family: "Croissant One", cursive;
+}
+header .sousMenu .sousMenuSexe ul li:last-child a {
+  color: red;
+}
+header .sousMenu .categorieCarte {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .sousMenu .categorieCarte .cart {
+  min-width: 33.3333333333%;
+  height: 20vh;
+  margin: 0 0.5rem;
+  position: relative;
+}
+header .sousMenu .categorieCarte .cart img {
+  width: 100%;
+  height: 100%;
+}
+header .sousMenu .categorieCarte .cart .opacity {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+header .sousMenu .categorieCarte .cart h2 {
+  color: white;
+  margin: 0.5rem 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  z-index: 2;
+  text-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+header .dropdown {
+  width: 100%;
+  height: auto;
+  padding: 0 1rem;
+}
+header .dropdown .title {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+header .dropdown .title i {
+  font-size: 1.5rem;
+}
+header .dropdown .title h2 {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  margin: 0 1.5rem;
+}
+header .dropdown ul {
+  width: 100%;
+  height: auto;
+}
+header .dropdown ul li {
+  padding: 0.7rem 0;
+}
+header .dropdown ul li a {
+  color: rgb(77, 77, 77);
+  font-size: 1.4rem;
+}/*# sourceMappingURL=style.css.map */
