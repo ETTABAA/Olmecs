@@ -6,6 +6,7 @@
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul {
@@ -184,6 +185,7 @@ header .sousMenu .categorieCarte .cart {
   height: 20vh;
   margin: 0 0.5rem;
   position: relative;
+  cursor: pointer;
 }
 header .sousMenu .categorieCarte .cart img {
   width: 100%;
@@ -219,6 +221,7 @@ header .dropdown .title {
   display: flex;
   align-items: center;
   padding: 2rem 0;
+  cursor: pointer;
 }
 header .dropdown .title i {
   font-size: 1.5rem;
