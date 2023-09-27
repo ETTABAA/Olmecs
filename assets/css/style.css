@@ -31,7 +31,6 @@ header {
   justify-content: center;
   left: 0;
   top: 0;
-  overflow: hidden;
 }
 header .navbar {
   width: 100%;
@@ -175,21 +174,22 @@ header .sousMenu .sousMenuSexe ul li:last-child a {
   color: red;
 }
 header .sousMenu .categorieCarte {
-  width: 100%;
-  height: 100%;
+  max-width: 1000px;
+  height: auto;
   display: flex;
   align-items: center;
+  overflow-x: hidden;
 }
 header .sousMenu .categorieCarte .cart {
   min-width: 33.3333333333%;
-  height: 20vh;
+  height: 100%;
   margin: 0 0.5rem;
   position: relative;
   cursor: pointer;
 }
 header .sousMenu .categorieCarte .cart img {
   width: 100%;
-  height: 100%;
+  height: 30vh;
 }
 header .sousMenu .categorieCarte .cart .opacity {
   width: 100%;

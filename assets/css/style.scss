@@ -28,7 +28,6 @@ header{
     justify-content: center;
     left: 0;
     top: 0;
-    overflow: hidden;
     .navbar{
         width: 100%;
         height: 8vh;
@@ -182,19 +181,20 @@ header{
             }
         }
         .categorieCarte{
-            width: 100%;
-            height: 100%;
+            max-width: 1000px;
+            height: auto;
             display: flex;
             align-items: center;
+            overflow-x: hidden;
             .cart{
                 min-width: calc(100%/3);
-                height: 20vh;
+                height: 100%;
                 margin:  0 .5rem ;
                 position: relative;
                 cursor: pointer;
                 img{
                     width: 100%;
-                    height: 100%;
+                    height: 30vh;
                 }
                 .opacity{
                     width: 100%;

@@ -10,6 +10,7 @@ const accessoirestWomenBtn = document.querySelector('.accessoirestWomenBtn');
 const vetementMenBtn = document.querySelector('.vetementMenBtn');
 const chaussuresMenBtn = document.querySelector('.chaussuresMenBtn');
 const accessoiresMenBtn = document.querySelector('.accessoiresMenBtn');
+
 const categorieCarte = document.querySelector('.categorieCarte');
 
 
@@ -104,7 +105,9 @@ accessoiresMenBtn.addEventListener('click',function(){
         document.querySelector('.ACCESSOIRESMen').classList.add('d-none');
     })
 })
+// function dragging carte slide
+const dragging = () =>{
+    console.log(categorieCarte.scrollLeft);
+}
 //ajouter un avénement sur le scroll des image en bas du menu
-categorieCarte.addEventListener('scroll',function(e){
-    console.log("rthrth");
-})
+categorieCarte.addEventListener('mousemove',dragging);
